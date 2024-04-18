@@ -5,15 +5,15 @@ import os
 import pymysql
 
 # Database connection parameters - update as needed
-DB_USER = os.getenv("DB_USER") or "task_logger"
-DB_PSWD = os.getenv("DB_PSWD") or "task_logger"
-DB_NAME = os.getenv("DB_NAME") or "task_logger"
-DB_HOST = os.getenv("DB_HOST") or "localhost"
+# DB_USER = os.getenv("DB_USER") or "task_logger"
+# DB_PSWD = os.getenv("DB_PSWD") or "task_logger"
+# DB_NAME = os.getenv("DB_NAME") or "task_logger"
+# DB_HOST = os.getenv("DB_HOST") or "localhost"
 
-#DB_USER = os.getenv("DB_USER") or "dbmasteruser"
-#DB_PSWD = os.getenv("DB_PSWD") or "+0H`2WV;Kw;%zWw8idz*r_6O,RORcZc7"
-#DB_NAME = os.getenv("DB_NAME") or "task_logger"
-#DB_HOST = os.getenv("DB_HOST") or "ls-3673dc7c4f0c9df0f4149d5deead6724b068ca4e.cn60uuew64vb.us-west-2.rds.amazonaws.com"
+DB_USER = "dbmasteruser"
+DB_PSWD = "+0H`2WV;Kw;%zWw8idz*r_6O,RORcZc7"
+DB_NAME = "task_logger"
+DB_HOST = "ls-3673dc7c4f0c9df0f4149d5deead6724b068ca4e.cn60uuew64vb.us-west-2.rds.amazonaws.com"
 
 db = pymysql.connect(
     host=DB_HOST,
