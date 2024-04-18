@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+
 import json
 import os
 import pymysql
 
 # Database connection parameters - update as needed
-DB_USER = os.getenv("DB_USER") or "root"
-DB_PSWD = os.getenv("DB_PSWD") or None
+DB_USER = os.getenv("DB_USER") or "task_logger"
+DB_PSWD = os.getenv("DB_PSWD") or "task_logger"
 DB_NAME = os.getenv("DB_NAME") or "task_logger"
 DB_HOST = os.getenv("DB_HOST") or "localhost"
 
